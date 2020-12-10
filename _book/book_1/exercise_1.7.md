@@ -94,9 +94,191 @@ The *expression*  inside the brackets can be reduced down to `z`, therefore :
 multiply(cy,(z/c)) + y.(z mod c)  = y . z
 ```
 
-- Trying to prove that for all the values of `A` and `x`  we get  `P(x)`
+- Trying to prove that for all the values of `A` and `x`  we [get](https://en.wikipedia.org/wiki/Polynomial#Polynomial_notation)  `P(x)`
 
-Expanding the algorithm:
-$$
-P_{x} = a_{n}x^{n} + a_{n-1}x^{n-1}
-$$
+*Base case* is when `n = 0`,returns ` P(x)= a0`
+
+when `n > 0`, assuming `n+1`
+
+![equation](https://latex.codecogs.com/png.latex?q%28x%29%20%3D%20a_%7Bx&plus;1%7Dx%5E%7Bn&plus;1%7D&plus;a_%7Bn%7Dx%5E%7Bn%7D&plus;...&plus;a_%7B0%7D)
+
+its is given that `p = p * x + A` (at the end of loop), we can say that,
+
+![](https://latex.codecogs.com/png.latex?p1%28x%29%20%3D%20q%28x%29*x%20&plus;%20a_%7B0%7D)
+
+Hence, `p1(x)`,
+
+![](https://latex.codecogs.com/png.latex?P%28x%29%20%3Da_%7Bn%7Dx%5E%7Bn%7D&plus;a_%7Bn-1%7Dx%5E%7Bn-1%7D&plus;...&plus;a_%7B1%7Dx&plus;a_%7B0%7D)
+
+- Trying to prove the correctness of a sorting algorithm, `n` is the number of elements in the array
+
+*Base case* is when `n = 1`, gives us the `A` array (nothing to swap)
+
+The resulting array of this algorithm needs to be sorted from smallest to largest. At the end of `x` iteration of the outer loop the `n-x`th element of the array is in sorted order. for the `x+1` iterations of the outer loop, the highest element would be      `n-(x+1)`. Let `A = [6,2]` 
+
+| iterations(x) | Array Element | Swap           |
+| ------------- | ------------- | -------------- |
+| `x = 1`       | 6             | -              |
+| `x = 2`       | 2             | `6,2` -> `2,6` |
+
+At the end of `x` iteration `n-x` element element is in sorted order, according to the above example at 2nd iteration `x = 2` , the element  at  index `n-x` is `2`.  
+
+##### Induction
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%7D%7B2%7D)
+
+*Base case*: when `n=1`,
+
+![](https://latex.codecogs.com/gif.latex?1%20%3D%20%5Cfrac%7B1%281&plus;1%29%7D%7B2%7D)
+
+![](https://latex.codecogs.com/gif.latex?1%20%3D%20%5Cfrac%7B2%7D%7B2%7D)
+
+*Induction step*: Assuming **True**  when `n = k` (1),
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k%7Di%20%3D%20%5Cfrac%7Bk%28k&plus;1%29%7D%7B2%7D)
+
+when  `n = k + 1`,
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k&plus;1%7Di%20%3D%20%5Cfrac%7B%28k&plus;1%29%28%28k&plus;1%29&plus;1%29%7D%7B2%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?1&plus;2&plus;...&plus;k&plus;%28k&plus;1%29)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%7D%7B2%7D%3D%20%5Cfrac%7Bk%28k&plus;1%29%7D%7B2%7D%20&plus;%20%28k%20&plus;%201%29)
+
+Therefore,
+
+![](https://latex.codecogs.com/gif.latex?1%20&plus;2&plus;%20...%20&plus;k%20&plus;%28k&plus;1%29%3D%20%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%7D%7B2%7D)
+
+---
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%5E%7B2%7D%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%282n&plus;1%29%7D%7B6%7D)
+
+*Base case*: when `n=1`,
+
+![](https://latex.codecogs.com/gif.latex?1%5E%7B2%7D%20%3D%20%5Cfrac%7B1%281&plus;1%29%282%5Ccdot%201%20&plus;1%29%7D%7B6%7D)
+
+![](https://latex.codecogs.com/gif.latex?1%5E%7B2%7D%20%3D%20%5Cfrac%7B6%7D%7B6%7D)
+
+*Induction step*: Assuming **True** when `n = k`(1),
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%3Dk%7Di%5E%7B2%7D%20%3D%20%5Cfrac%7Bk%28k&plus;1%29%282k&plus;1%29%7D%7B6%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?1%5E%7B2%7D%20&plus;%202%5E%7B2%7D%20&plus;%20...%20&plus;%20k%5E%7B2%7D)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%3Dk&plus;1%7Di%5E%7B2%7D%20%3D%20%5Cfrac%7B%28k&plus;1%29%28%28%28k&plus;1%29&plus;1%29%282%28k&plus;1%29&plus;1%29%29%7D%7B6%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%281%5E%7B2%7D&plus;2%5E%7B2%7D&plus;...&plus;k%5E%7B2%7D%29&plus;%28k&plus;1%29%5E%7B2%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%28k&plus;1%29%282k&plus;1%29%7D%7B6%7D&plus;%20%28k&plus;1%29%5E%7B2%7D)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%282k&plus;3%29%7D%7B6%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k%5E%7B2%7D&plus;2k&plus;k&plus;2%29%282k&plus;3%29%7D%7B6%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B2k%5E%7B3%7D&plus;9k%5E%7B2%7D&plus;13k&plus;6%7D%7B6%7D)
+
+Simplifying Left Hand side to get the Right Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%28k&plus;1%29%282k&plus;1%29&plus;6%28k&plus;1%29%5E%7B2%7D%7D%7B6%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k%5E%7B2%7D&plus;k%29%282k&plus;1%29&plus;6%28k%5E%7B2%7D&plus;2k&plus;1%29%7D%7B6%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B2k%5E%7B3%7D&plus;9k%5E%7B2%7D&plus;13k&plus;6%7D%7B6%7D)
+
+The *Left hand side* is **equal** to *right hand side* thus concluding the induction step.
+
+---
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%5E%7B3%7D%20%3D%20%5Cfrac%7Bn%5E%7B2%7D%28n&plus;1%29%5E%7B2%7D%7D%7B4%7D)
+
+*Base Case*: when `n=1`,
+
+![](https://latex.codecogs.com/png.latex?1%5E%7B3%7D%20%3D%20%5Cfrac%7B1%5E%7B2%7D%281&plus;1%29%5E%7B2%7D%7D%7B4%7D)
+
+*Induction step*: Assuming **True** when `n = k`(1),
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k%7Di%5E%7B3%7D%20%3D%20%5Cfrac%7Bk%5E%7B2%7D%28k&plus;1%29%5E%7B2%7D%7D%7B4%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/png.latex?1%5E%7B3%7D%20&plus;%202%5E%7B3%7D%20&plus;%20...%20&plus;%20k%5E%7B3%7D)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%3Dk&plus;1%7Di%5E%7B3%7D%20%3D%20%5Cfrac%7B%28k&plus;1%29%5E%7B2%7D%28%28k&plus;1%29&plus;1%29%5E%7B2%7D%7D%7B4%7D)
+
+ Left Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%281%5E%7B3%7D%20&plus;%202%5E%7B3%7D%20&plus;%20...%20&plus;%20k%5E%7B3%7D%29%20&plus;%20%28k&plus;1%29%5E%7B3%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%5E%7B2%7D%28k&plus;1%29%5E%7B2%7D%7D%7B4%7D%20&plus;%20%28k&plus;1%29%5E%7B3%7D)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%5E%7B2%7D%28k&plus;2%29%5E%7B2%7D%7D%7B4%7D)
+
+Simplifying the Left Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%5E%7B2%7D%28k&plus;1%29%5E%7B2%7D&plus;4%28k&plus;1%29%5E%7B3%7D%7D%7B4%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%5E%7B2%7D%28k%5E%7B2%7D&plus;4%28k&plus;1%29%29%7D%7B4%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%5E%7B2%7D%28k&plus;2%29%5E%7B2%7D%7D%7B4%7D)
+
+The *Left Hand Side* is **equal** to the *Right Hand Side* thus concluding the induction step.
+
+---
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%28i&plus;1%29%28i&plus;2%29%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%28n&plus;2%29%28n&plus;3%29%7D%7B4%7D)
+
+*Base Case*: `n=1`,
+
+![](https://latex.codecogs.com/png.latex?1%281&plus;1%29%281&plus;2%29%20%3D%20%5Cfrac%7B1%281&plus;1%29%281&plus;2%29%281&plus;3%29%7D%7B4%7D)
+
+![](https://latex.codecogs.com/png.latex?6%20%3D%20%5Cfrac%7B18%7D%7B4%7D)
+
+*Induction step*: when `n = k`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k%7Di%28i&plus;1%29%28i&plus;2%29%20%3D%20%5Cfrac%7Bk%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29%7D%7B4%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?1%281&plus;1%29%281&plus;2%29&plus;2%282&plus;1%29%282&plus;2%29&plus;...&plus;k%28k&plus;1%29%28k&plus;2%29)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k&plus;1%7Di%28i&plus;1%29%28i&plus;2%29%20%3D%20%5Cfrac%7B%28k&plus;1%29%28%28k&plus;1%29&plus;1%29%28%28k&plus;1%29&plus;2%29%28%28k&plus;1%29&plus;3%29%7D%7B4%7D)
+
+Left Hand side,
+
+![](https://latex.codecogs.com/gif.latex?1%281&plus;1%29%281&plus;2%29&plus;...&plus;k%28k&plus;1%29%28k&plus;2%29%20&plus;%20%28k&plus;1%29%28%28k&plus;1%29&plus;1%29%28%28k&plus;1%29&plus;2%29)
+
+Right Hand side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29%28k&plus;4%29%7D%7B4%7D)
+
+simplifying the Left Hand side,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29%7D%7B4%7D%20&plus;%20k%28k&plus;1%29%28k&plus;2%29)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bk%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29&plus;4k%28k&plus;1%29%28k&plus;2%29%7D%7B4%7D)
+
+*Take the common terms out*,
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%28k%28k&plus;3%29&plus;4k%29%7D%7B4%7D)
+
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29%28k&plus;4%29%7D%7B4%7D)
+
+*left hand side* and *right hand side* is **equal** therefore induction step is correct.
