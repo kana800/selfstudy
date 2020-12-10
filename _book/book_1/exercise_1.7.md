@@ -153,6 +153,8 @@ Therefore,
 
 ![](https://latex.codecogs.com/gif.latex?1%20&plus;2&plus;%20...%20&plus;k%20&plus;%28k&plus;1%29%3D%20%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%7D%7B2%7D)
 
+:black_large_square:
+
 ---
 
 ![](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%5E%7B2%7D%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%282n&plus;1%29%7D%7B6%7D)
@@ -197,7 +199,7 @@ Simplifying Left Hand side to get the Right Hand Side,
 
 ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B2k%5E%7B3%7D&plus;9k%5E%7B2%7D&plus;13k&plus;6%7D%7B6%7D)
 
-The *Left hand side* is **equal** to *right hand side* thus concluding the induction step.
+The *Left hand side* is **equal** to *right hand side* thus concluding the induction step. :black_large_square:
 
 ---
 
@@ -237,7 +239,7 @@ Simplifying the Left Hand Side,
 
 ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%5E%7B2%7D%28k&plus;2%29%5E%7B2%7D%7D%7B4%7D)
 
-The *Left Hand Side* is **equal** to the *Right Hand Side* thus concluding the induction step.
+The *Left Hand Side* is **equal** to the *Right Hand Side* thus concluding the induction step. :black_large_square:
 
 ---
 
@@ -281,4 +283,197 @@ simplifying the Left Hand side,
 
 ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;2%29%28k&plus;3%29%28k&plus;4%29%7D%7B4%7D)
 
-*left hand side* and *right hand side* is **equal** therefore induction step is correct.
+*The left hand side* and *right hand side* is **equal** therefore induction step is correct. :black_large_square:
+
+---
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%200%7D%5E%7Bn%7D%20a%5E%7Bi%7D%20%3D%20%5Cfrac%7Ba%5E%7Bn&plus;1%7D-1%7D%7Ba-1%7D)
+
+*Base Case*: when `n = 1`,
+
+![](https://latex.codecogs.com/gif.latex?a%5E%7B0%7D%20&plus;%20a%5E%7B1%7D%20%3D%20%5Cfrac%7B%28a&plus;1%29%28a-1%29%7D%7B%28a-1%29%7D)
+
+*Inductive step*: when `n = k`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%200%7D%5E%7Bn%3Dk%7D%20a%5E%7Bi%7D%20%3D%20%5Cfrac%7Ba%5E%7Bk&plus;1%7D-1%7D%7Ba-1%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?a%5E%7B0%7D%20&plus;%20a%5E%7B1%7D%20...%20&plus;%20a%5E%7Bk%7D)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%200%7D%5E%7Bn%3Dk&plus;1%7D%20a%5E%7Bi%7D%20%3D%20%5Cfrac%7Ba%5E%7Bk&plus;2%7D-1%7D%7Ba-1%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?a%5E%7B0%7D%20&plus;%20a%5E%7B1%7D%20...%20&plus;%20a%5E%7Bk%7D%20&plus;%20a%5E%7Bk&plus;1%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%5E%7Bk&plus;1%7D-1%7D%7Ba-1%7D%20&plus;%20a%5E%7Bk%7D%20&plus;1)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%5E%7Bk&plus;2%7D-1%7D%7Ba-1%7D)
+
+Simplifying Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%5E%7Bk&plus;1%7D-1%20&plus;%20%28a-1%29%28a%5E%7Bk%7D%20&plus;1%29%7D%7Ba-1%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%5E%7Bk&plus;1%7D-1%20&plus;%20%28a%5E%7Bk&plus;2%7D-a%5E%7Bk&plus;1%7D%29%7D%7Ba-1%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B-1%20&plus;%20a%5E%7Bk&plus;2%7D%7D%7Ba-1%7D)
+
+The *left hand side* is **equal** to the *right hand side* proving the inductive step. :black_large_square:
+
+---
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Cfrac%7B1%7D%7Bi%28i&plus;1%29%7D%20%3D%20%5Cfrac%7Bn%7D%7Bn&plus;1%7D)
+
+*Base case*: when `n=1`,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B1%281&plus;1%29%7D%20%3D%20%5Cfrac%7B1%7D%7B1&plus;1%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2%7D%20%3D%20%5Cfrac%7B1%7D%7B2%7D)
+
+*Inductive step*: when `n = k`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%3Dk%7D%20%5Cfrac%7B1%7D%7Bi%28i&plus;1%29%7D%20%3D%20%5Cfrac%7Bk%7D%7Bk&plus;1%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B1%281&plus;1%29%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%282&plus;1%29%7D%20...%20&plus;%20%5Cfrac%7B1%7D%7Bk%28k&plus;1%29%7D)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%3Dk&plus;1%7D%20%5Cfrac%7B1%7D%7Bi%28i&plus;1%29%7D%20%3D%20%5Cfrac%7Bk&plus;1%7D%7Bk&plus;2%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B1%281&plus;1%29%7D%20...%20&plus;%20%5Cfrac%7B1%7D%7Bk%28k&plus;1%29%7D%20&plus;%20%5Cfrac%7B1%7D%7B%28k&plus;1%29%28k&plus;2%29%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Bk%7D%7Bk&plus;1%7D%20&plus;%20%5Cfrac%7B1%7D%7B%28k&plus;1%29%28k&plus;2%29%7D)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Bk&plus;1%7D%7Bk&plus;2%7D)
+
+Simplifying the Left Hand Side,
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Bk%28k&plus;2%29%20&plus;%201%7D%7B%28k&plus;1%29%28k&plus;2%29%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Bk%5E%7B2%7D&plus;%202k%20&plus;1%7D%7B%28k&plus;1%29%28k&plus;2%29%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%28k&plus;1%29%28k&plus;1%29%7D%7B%28k&plus;1%29%28k&plus;2%29%7D)
+
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%28k&plus;1%29%7D%7B%28k&plus;2%29%7D)
+
+The *left hand side* is **equal** to the *right hand side* proving the inductive step. :black_large_square:
+
+---
+
+![](https://latex.codecogs.com/gif.latex?n%5E%7B3%7D%20&plus;%202n)
+
+*Base case*: when `n=1`,
+
+![](https://latex.codecogs.com/gif.latex?1%5E%7B3%7D%20&plus;%202*1%20%3D%203)
+
+`3` is divisible by `3` so the expression is **True** when `n=1`
+
+*Inductive case*: when `n=k`,
+
+![](https://latex.codecogs.com/gif.latex?k%5E%7B3%7D%20&plus;%202k%20%3D%203m)
+
+*m is an integer*
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?%28k&plus;1%29%5E%7B3%7D&plus;2*%28k&plus;1%29%20%3D%20k%5E%7B3%7D%20&plus;%202k)
+
+![](https://latex.codecogs.com/png.latex?k%5E%7B3%7D%20&plus;%203k%5E%7B2%7D%20&plus;%203k%20&plus;%201%20&plus;%202k%20&plus;%202)
+
+![](https://latex.codecogs.com/png.latex?%28k%5E%7B3%7D&plus;2k%29&plus;3%28k%5E%7B2%7D&plus;k&plus;1%29)
+
+*we can substitute*`3m` instead of `(k3 + 2k)`,
+
+![](https://latex.codecogs.com/png.latex?%283m%29&plus;3%28k%5E%7B2%7D&plus;k&plus;1%29)
+
+![](https://latex.codecogs.com/png.latex?3%28m&plus;%28k%5E%7B2%7D&plus;k&plus;1%29%29)
+
+This is divisible by `3`​ :black_large_square:
+
+---
+
+![](https://latex.codecogs.com/png.latex?v%28n%29%20%3D%20n%20-1)
+
+*Base case*: when `n=1`,
+
+![](https://latex.codecogs.com/png.latex?v%28n%29%20%3D%201%20-1%20%3D%200)
+
+A tree with `1` node has **no edges**.
+
+*Inductive case*: when `n = k` (k nodes),
+
+![](https://latex.codecogs.com/png.latex?v%28k%29%20%3D%20k%20-%201)
+
+when `n = k + 1`,
+
+![](https://latex.codecogs.com/png.latex?v%28k&plus;1%29%20%3D%20k%20&plus;%201%20-%201%20%3D%20k)
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BBlue%7D%20v%28k%29&plus;1%20%3D%20k%20%7D)
+
+*substituting* `v(k)` to *blue equation*,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BBlue%7D%20%28k%20-%201%29%7D%20&plus;%201%20%3D%20k)
+
+The *Left Hand Side* is  **equal** to the *Right Hand Side* :black_large_square:
+
+---
+
+![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7Di%5E%7B3%7D%20%3D%20%28%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20i%20%29%5E%7B2%7D)
+
+*Base case*: when `n = 1`,
+
+![](https://latex.codecogs.com/png.latex?1%5E%7B3%7D%20%3D%201%5E%7B2%7D)
+
+*Inductive case*: Assuming **True** when `n = k`,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BGreen%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k%7Di%5E%7B3%7D%20%3D%20%28%5Csum_%7Bi%3D1%7D%5E%7Bn%20%3D%20k%7D%20i%20%29%5E%7B2%7D%7D)
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BRed%7D%201%5E%7B3%7D%20&plus;%202%5E%7B3%7D%20&plus;%20...%20&plus;%20k%5E%7B3%7D%7D)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BBlue%7D%20%281%20&plus;%202%20&plus;%20...%20&plus;%20k%29%5E%7B2%7D%7D)
+
+when `n = k+1`,
+
+Left Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BRed%7D%20%281%20&plus;%202%5E%7B3%7D%20&plus;%20...%20&plus;%20k%5E%7B3%7D%29%7D%20&plus;%20%28k&plus;1%29%5E%7B3%7D)
+
+Right Hand Side,
+
+![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BBlue%7D%20%281%20&plus;%202%20&plus;%20...%20&plus;%20k%29%7D%20&plus;%20%28k%20&plus;%201%29%29%5E%7B2%7D)
+
+---
+
+##### Estimation :chart_with_downwards_trend:
+
+- 20 million pages :information_desk_person:
+
+- Around 1 million words
+
+- 277 hours , 12 days
+
+- 51 cities ??
+
+- microseconds ; more that a microsecond; 100 billion instructions ? 
+
+- `n2` -> `(10000)^2` seconds (worst case scenario)
+
+  `n log n` ->  `10^4 log 10^4` seconds
+
+##### Implementation Projects
+
