@@ -475,5 +475,37 @@ Right Hand Side,
 
   `n log n` ->  `10^4 log 10^4` seconds
 
-##### Implementation Projects
+##### Interview Problems :mortar_board:
+
+- [function to perform integer division](division.c)
+
+- >  25 horses , At most 5 horses can race together,  Need to determine the 1st,2nd & 3rd fastest horses. Find the minimum number of races in which this can be done
+
+Answer : **seven races**
+
+There are 25 horses and at most 5 horses can race together, this means that there is at least 5 races.  Take all that got the first place and race them together (**sixth race**)  and take 1st,2nd & 3rd horses from the **sixth race** and race them again to get the 2nd and 3rd position. 
+
+- > piano tuners in the whole world
+
+  1 billion :musical_keyboard:tuners
+
+- > gas stations in USA
+
+  Assuming 2/3 of US population owns a car, 500 million cars
+
+  Around 50000 gas stations
+
+- > How much does the ice in a hockey rink weigh
+
+  1 tonne ?  
+
+- > How many miles of road are there in the USA
+
+  6 million miles
+
+- > Manhattan Phone book at random in order to find a specific name?
+
+  3 times
+
+##### Programming Challenges
 
