@@ -174,7 +174,7 @@
 
    `2n` multiplications
 
-   > yes, using the horner's method of synthetic division
+   > yes, using the  method of synthetic division
 
 6. > Prove that the following algorithm for computing the maximum value in an array `A[1..n]` is correct
    >
@@ -193,3 +193,7 @@
    Lets assume the algorithm is correct when `n = k`
 
    *Induction step* when `n = k + 1`,
+   
+   If `k+1`th element is the max then `k+1` is returned as `m`.  If `k+1` is not the  max then `k` is the max element.
+   
+   
