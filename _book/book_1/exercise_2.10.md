@@ -139,14 +139,57 @@
 
    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7D%5Csum_%7Bj%20%3D%20i%20&plus;%201%7D%5E%7Bn%7D%5Csum_%7Bk%20%3D%20i%20&plus;%20j%20-%201%7D%5E%7Bn%7D%201)
 
-   ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7D%5Csum_%7Bj%20%3D%20i%20&plus;%201%7D%5E%7Bn%7Dn)
-
-   ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7Dn%5E%7B2%7D)
-
-   ![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BRed%7D%20%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7Dn%5E%7B2%7D%7D)
-
-   The **red** color term is the dominant term,
-
-   ![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BRed%7D%20n%5E%7B3%7D%7D)
-
    
+
+   Reducing ![](https://latex.codecogs.com/png.latex?%5Ctiny%20%5Csum_%7Bk%20%3D%201%20&plus;j%20-%201%7D%5E%7Bn%7D1) using ![](https://latex.codecogs.com/png.latex?%5Ctiny%20%5Csum_%7Bi%20%3D%20m%7D%5E%7Bn%7D1%20%3D%20n%20-%20m%20&plus;%201),
+
+   ![](https://latex.codecogs.com/png.latex?n%20-%20i%20-j%20&plus;%202)
+
+   ![](https://latex.codecogs.com/png.latex?%7B%5Ccolor%7BBlue%7D%20%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7D%20%5Csum_%7Bj%20%3Di%20&plus;1%7D%5E%7Bn%7D%20n%20-%20i%20-j%20&plus;%202%7D)
+
+   ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7D%28%5Cfrac%7B1%7D%7B2%7D%28i-n%29%283i-n-3%29%29)
+
+   The the **Big-Oh complexity** of this function is `O(n^2)`.
+
+5. > Algorithm is used to evaluate the polynomial
+   >
+   > ![](https://latex.codecogs.com/png.latex?%5Ctiny%20p%28x%29%3D%20a_%7Bn%7Dx%5E%7Bn%7D%20&plus;%20a_%7Bn-1%7Dx%5E%7Bn-1%7D&plus;...&plus;a_%7B1%7Dx&plus;a_%7B0%7D)
+   >
+   > ```pseudocode
+   > p := a0;
+   > xpower := 1;
+   > for i:= 1 to n do
+   > 	xpower := x * xpower;
+   > 	p := p + ai * xpower;
+   > end
+   > ```
+
+   >
+   >
+   >How many multiplications are done in the worst-case and additions
+
+   `n` additions and `2n` multiplication
+
+   > How many multiplications are done on the average?
+
+   `2n` multiplications
+
+   > yes, using the horner's method of synthetic division
+
+6. > Prove that the following algorithm for computing the maximum value in an array `A[1..n]` is correct
+   >
+   > ```pseudocode
+   > function max(A)
+   > 	m := A[1]
+   > 	for i := 2 to n do
+   > 		if A[i] > m then m:= A[i]
+   > 	return (m)
+   > ```
+
+   *Base Case*
+
+   IF the length of the algorithm is `1` then Loop isn't executed and `m` is returned. 
+
+   Lets assume the algorithm is correct when `n = k`
+
+   *Induction step* when `n = k + 1`,
