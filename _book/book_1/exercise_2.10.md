@@ -322,6 +322,60 @@
 
   Above function are valid when `f(n) = O(g(n))`
 
-  
+  ---
 
   
+
+- > For each of the following pairs of function `f(n)` and `g(n)`, determine whether `f(n)=O(g(n))`,`g(n)=O(f(n))` or both
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%28n%5E%7B2%7D-n%29/2%20%3Bg%28n%29%20%3D%206n)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3E%20g%28n%29)
+
+  Therefore `g(n)= O(f(n))`
+
+  >![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%20%3D%20n%20&plus;%202%5Csqrt%20n%20%3B%20g%28n%29%20%3D%20n%5E%7B2%7D)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20g%28n%29%20%3E%20f%28n%29)
+
+  Therefore `f(n) = O(g(n))`
+
+  > ![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%3Dn%5Clog%20n%20%3B%20g%28n%29%3Dn%5Csqrt%20n/%202)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20g%28n%29%20%3E%20f%28n%29)
+
+  Therefore `f(n) = O(g(n))`
+
+  > ![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%3Dn&plus;%5Clog%20n%20%3B%20g%28n%29%3D%5Csqrt%20n)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3E%20g%28n%29)
+
+  Therefore `g(n) = O(f(n))`
+
+  > ![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%20%3D%202%28%5Clog%20n%29%5E%7B2%7D%3B%20g%28n%29%3D%5Clog%20n&plus;%201)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3E%20g%28n%29)
+
+  Therefore `g(n) = O(f(n))`
+
+  > ![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%3D4n%5Clog%20n&plus;n%3B%20g%28n%29%3D%28n%5E%7B2%7D-n%29/2)
+
+  when ![](https://latex.codecogs.com/gif.latex?%5Csmall%20n%20%5Cto%20%5Cinfty),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20g%28n%29%20%3E%20f%28n%29)
+
+  Therefore `f(n) = O(g(n))`
+
+  ---
+
+- 
