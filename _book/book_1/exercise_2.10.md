@@ -195,5 +195,37 @@
    *Induction step* when `n = k + 1`,
    
    If `k+1`th element is the max then `k+1` is returned as `m`.  If `k+1` is not the  max then `k` is the max element.
-   
-   
+
+##### Big Oh
+
+- > True or False
+  >
+  > Is `2^(n+1)` = `O(2^(n))`?
+
+  We can write ![](https://latex.codecogs.com/png.latex?%5Ctiny%202%5E%7Bn&plus;1%7D),
+
+  ![](https://latex.codecogs.com/png.latex?2%5E%7Bn&plus;1%7D%20%3D%202%5Ccdot%202%5E%7Bn%7D)
+
+  This is **TRUE**
+
+  >Is `2^(2n)` = `O(2^n)`?
+
+  We can write ![](https://latex.codecogs.com/png.latex?%5Ctiny%202%5E%7B2n%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%282%5E%7Bn%7D%29%5E%7B2%7D)
+
+  Assuming that  ![](https://latex.codecogs.com/png.latex?%5Ctiny%20%282%5E%7Bn%7D%29%5E%7B2%7D%20%3D%20O%282%5E%7Bn%7D%29)Then there should be constant *c* greater than or equal to  ![](https://latex.codecogs.com/png.latex?%5Ctiny%202%5E%7B2n%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%282%5E%7Bn%7D%29%5E%7B2%7D%20%5Cleq%20c%20%5Ccdot%202%5E%7Bn%7D)
+
+  Divide by `2^(n)`,
+
+  ![](https://latex.codecogs.com/png.latex?2%5E%7Bn%7D%20%5Cleq%20c)
+
+  There are no values for c that can make the above inequality *TRUE* therefore this is **FALSE**.
+
+- > For each of the following pairs of functions. Determine which relationship is correct and briefly explain why
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%5Clog%20n%5E%7B2%7D%3B%20g%28n%29%20%3D%20%5Clog%20n%20&plus;%205%20%3B%7B%5Ccolor%7BRed%7D%20O%28g%28n%29%29%20%3D%20f%28n%29%7D)
+
+  
