@@ -226,6 +226,102 @@
 
 - > For each of the following pairs of functions. Determine which relationship is correct and briefly explain why
 
-  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%5Clog%20n%5E%7B2%7D%3B%20g%28n%29%20%3D%20%5Clog%20n%20&plus;%205%20%3B%7B%5Ccolor%7BRed%7D%20O%28g%28n%29%29%20%3D%20f%28n%29%7D)
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%5Clog%20n%5E%7B2%7D%3B%20g%28n%29%20%3D%20%5Clog%20n%20&plus;%205)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkBlue%7D%20f%28n%29%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkBlue%7D%20%5Clog%20n%5E%7B2%7D%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkBlue%7D%202%20%5Ctimes%20%5Clog%20n%7D)
+
+  if ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkBlue%7D%20f%28n%29%7D%20%3D%20%7B%5Ccolor%7BDarkRed%7D%20g%28n%29%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkBlue%7D%202%20%5Ctimes%20%5Clog%20n%7D%20%3D%20%7B%5Ccolor%7BDarkRed%7D%202%20%28%5Clog%20n%20&plus;%205%29%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Ctherefore%20%5Clog%20n%5E%7B2%7D%20%3D%20C%5Ctimes%20O%28g%28n%29%29) where `C = 2`
+
+  >![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%5Csqrt%20n%20%3B%20g%28n%29%20%3D%20%5Clog%20n%5E%7B2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkRed%7D%20g%28n%29%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%7B%5Ccolor%7BDarkRed%7D%202%20%5Ctimes%20%5Clog%20n%7D)
+
+  Using the [*limit method*](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%5Clog%5E%7B2%7D%28n%29%3B%20g%28n%29%20%3D%20%5Clog%28n%29),
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%20%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Csqrt%20n%7D%7B%5Clog%20n%5E%7B2%7D%7D)
+
+  ![](https://latex.codecogs.com/png.latex?2%20%5Ctimes%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Csqrt%20n%7D%7B%5Clog%20n%7D%20%3D%20%5Cinfty)
+
+  Above functions are valid when `f(n)= \omega(g(n))`
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%5Clog%5E%7B2%7D%28n%29%3B%20g%28n%29%20%3D%20%5Clog%28n%29)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Clog%5E%7B2%7D%28n%29%7D%7B%5Clog%28n%29%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Clog%28n%29%20%3D%20%5Cinfty)
+
+  Above functions are valid when `f(n) = \omega(g(n))`
+
+  > ![](https://latex.codecogs.com/gif.latex?%5Csmall%20f%28n%29%20%3D%20n%3B%20g%28n%29%20%3D%20%5Clog%5E%7B2%7D%28n%29)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%7D%7B%5Clog%5E%7B2%7D%28n%29%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%28%5Cfrac%7B%5Csqrt%20n%7D%7B%5Clog%20%28n%29%7D%29%5E%7B2%7D%20%3D%20%5Cinfty)
+
+  Above functions are valid when `f(n) = \omega(g(n))`
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20n%20%5Clog%28n%29%20&plus;%20n%3Bg%28n%29%20%3D%20%5Clog%28n%29)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%5Clog%28n%29&plus;n%7D%7B%5Clog%28n%29%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bn%5Clog%28n%29%7D%7B%5Clog%28n%29%7D%20&plus;%20%5Cfrac%7Bn%7D%7B%5Clog%28n%29%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%28n&plus;%20%5Cfrac%7Bn%7D%7B%5Clog%28n%29%7D%29%20%3D%20%5Cinfty)
+
+  Above functions are valid when `f(n) = \omega(g(n))`
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%2010%20%3Bg%28n%29%20%3D%20%5Clog%2810%29)
+
+  Both are constant.
+
+  Above function are valid when `f(n) = \theta(g(n))`
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%202%5E%7Bn%7D%20%3Bg%28n%29%20%3D%2010*n%5E%7B2%7D)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B2%5E%7Bn%7D%7D%7B10n%5E%7B2%7D%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Cfrac%7B1%7D%7B10%7D%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7B2%5E%7Bn%7D%7D%7Bn%5E%7B2%7D%7D)
+
+  Using *L'Hopital's Rule* (taking the derivatives),
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B10%7D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Cln%282%29%5Ccdot2%5E%7Bn%7D%7D%7B2n%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B10%7D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B2%5Cln%282%29%5Ccdot2%5E%7Bn%7D%7D%7B2%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cln%282%29%7D%7B10%7D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%202%5E%7Bn%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cln%282%29%7D%7B10%7D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%202%5E%7Bn%7D%20%3D%20%5Cinfty)
+
+  Above function are valid when `f(n) = \theta(g(n))`
+
+  > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%202%5E%7Bn%7D%20%3Bg%28n%29%20%3D%203%5E%7Bn%7D)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%3D%5Cfrac%7B2%5E%7Bn%7D%7D%7B3%5E%7Bn%7D%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csmall%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%28%5Cfrac%7B2%7D%7B3%7D%29%5E%7Bn%7D%20%3D%200)
+
+  Above function are valid when `f(n) = O(g(n))`
+
+  
 
   
