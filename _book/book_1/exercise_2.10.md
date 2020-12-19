@@ -323,9 +323,7 @@
   Above function are valid when `f(n) = O(g(n))`
 
   ---
-
   
-
 - > For each of the following pairs of function `f(n)` and `g(n)`, determine whether `f(n)=O(g(n))`,`g(n)=O(f(n))` or both
 
   > ![](https://latex.codecogs.com/png.latex?%5Csmall%20f%28n%29%20%3D%20%28n%5E%7B2%7D-n%29/2%20%3Bg%28n%29%20%3D%206n)
@@ -377,5 +375,149 @@
   Therefore `f(n) = O(g(n))`
 
   ---
+  
+- > Prove that ![](https://latex.codecogs.com/gif.latex?n%5E%7B3%7D%20-%203n%5E%7B2%7D-n%20&plus;%201%20%3D%20%5Ctheta%28n%5E%7B3%7D%29)
 
-- 
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%20%7D%5Cfrac%7Bn%5E%7B3%7D%20-%203n%5E%7B2%7D-n%20&plus;%201%7D%7Bn%5E%7B3%7D%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%20%7D%5Cfrac%7Bn%5E%7B3%7D%28%20%5Cfrac%7B3%7D%7Bn%7D-%5Cfrac%7B1%7D%7Bn%5E%7B2%7D%7D%20&plus;%20%5Cfrac%7B1%7D%7Bn%5E%7B3%7D%7D%29%7D%7Bn%5E%7B3%7D%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%20%7D%5Cfrac%7B%28%20%5Cfrac%7B3%7D%7Bn%7D-%5Cfrac%7B1%7D%7Bn%5E%7B2%7D%7D%20&plus;%20%5Cfrac%7B1%7D%7Bn%5E%7B3%7D%7D%29%7D%7B1%7D%20%3D%201)
+
+  When `c > 0` then `f(n) = \theta(n^3)`
+
+  ---
+  
+- > Prove that ![](https://latex.codecogs.com/gif.latex?n%5E%7B2%7D%20%3D%20O%282%5E%7Bn%7D%29)
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bn%5E%7B2%7D%7D%7B2%5E%7Bn%7D%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20n%5E%7B2%7D2%5E%7B-n%7D%20%3D%200)
+
+  When `c=0` then `f(n) = O(2^n)`
+
+  ---
+  
+- For each of the following pairs of functions `f(n)` and `g(n)` , give and appropriate positive constant `c` such that `f(n) <= c.g(n)` for all `n>1`
+
+  > ![](https://latex.codecogs.com/gif.latex?f%28n%29%20%3D%20n%5E%7B2%7D%20&plus;%20n%20&plus;%201%20%3B%20g%28n%29%20%3D%202n%5E%7B3%7D)
+
+  When `c=1` ,
+
+  `f(1) = 3 and g(1) = 2`
+
+  `is f(1) <= g(1)` *not true*
+
+  When `c=2`,
+
+  `f(2) = 7 and g(2) = 16`
+
+  `is f(2) <= g(2)` *true*
+
+  Therefore `c = 2`
+
+  > ![](https://latex.codecogs.com/gif.latex?f%28n%29%20%3D%20n%5Csqrt%20n%20&plus;%20n%5E%7B2%7D%20%3B%20g%28n%29%20%3D%20n%5E%7B2%7D)
+
+  *didn't show the working*
+
+  When `c = 1`,
+
+  `f(1) = 2 and g(1) = 1` *not true*
+
+  When `c = 3`,
+
+  `f(3)  <= g(3)` 
+
+  Therefore `c = 3`
+
+  > ![](https://latex.codecogs.com/gif.latex?f%28n%29%20%3D%20n%5E%7B2%7D%20-%20n%20&plus;%201%20%3B%20g%28n%29%20%3D%20%5Cfrac%7Bn%5E%7B2%7D%7D%7B2%7D)
+
+  *didn't show the working*
+
+  `c = 1`
+
+  ---
+  
+- > Prove that if ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29%29)and ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B2%7D%28n%29%29), then ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29%29).
+
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20%5Cleq%20c%20%5Ccdot%20g_%7B1%7D%28n%29)
+
+  <img src="https://latex.codecogs.com/gif.latex?f_%7B2%7D%28n%29%20%5Cleq%20c%20%5Ccdot%20g_%7B2%7D%28n%29" />
+
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%20%5Cleq%20c%28g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29)
+
+  Therefore,
+
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29)
+
+  > Prove that if ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20%3D%20%5COmega%28g_%7B1%7D%28n%29%29)and ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B2%7D%28n%29%20%3D%20%5COmega%28g_%7B2%7D%28n%29%29), then ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%20%3D%20%5COmega%28g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29%29)
+
+  ![](https://latex.codecogs.com/gif.latex?c%20%5Ccdot%20f_%7B1%7D%28n%29%20%5Cgeq%20g_%7B1%7D%28n%29)
+
+  ![](https://latex.codecogs.com/gif.latex?c%20%5Ccdot%20f_%7B2%7D%28n%29%20%5Cgeq%20g_%7B2%7D%28n%29)
+
+  ![](https://latex.codecogs.com/gif.latex?c%20%5Ccdot%28f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%29%20%5Cgeq%20g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29)
+
+  Therefore,
+
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20&plus;%20f_%7B2%7D%28n%29%20%3D%20%5COmega%28g_%7B1%7D%28n%29&plus;g_%7B2%7D%28n%29%29)
+
+  > Prove that if ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29%29)and ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B2%7D%28n%29%29), then ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20f_%7B1%7D%28n%29%20%5Ccdot%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29%20%5Ccdot%20g_%7B2%7D%28n%29%29)
+  
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20%5Cleq%20c%20%5Ccdot%20g_%7B1%7D%28n%29)
+  
+  <img src="https://latex.codecogs.com/gif.latex?f_%7B2%7D%28n%29%20%5Cleq%20c%20%5Ccdot%20g_%7B2%7D%28n%29"  />
+  
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20%5Ccdot%20f_%7B2%7D%28n%29%20%3D%20C%20%28g_%7B1%7D%28n%29%20%5Ccdot%20g_%7B2%7D%28n%29%29)
+  
+  Therefore,
+  
+  ![](https://latex.codecogs.com/gif.latex?f_%7B1%7D%28n%29%20%5Ccdot%20f_%7B2%7D%28n%29%20%3D%20O%28g_%7B1%7D%28n%29%20%5Ccdot%20g_%7B2%7D%28n%29%29)
+  
+  ---
+  
+- >  Prove for all `k >= 1` and all sets of constants `{ak,ak-1,...,a1,a0} element of R`,
+  >
+  > ![](https://latex.codecogs.com/gif.latex?%5Ctiny%20a_%7Bk%7Dn%5E%7Bk%7D%20&plus;%20a_%7Bk-1%7Dn%5E%7Bk-1%7D&plus;...&plus;a_%7B1%7Dn&plus;a_%7B0%7D%20%3D%20O%28n%5E%7Bk%7D%29)
+
+  *Base case*: when `k = 1`,
+
+  ![](https://latex.codecogs.com/gif.latex?a_%7B1%7Dn%20&plus;%20a_%7B0%7D%20%3D%20O%28n%29)
+
+  *Induction step*: Assuming **True** when `k = k + 1`,
+
+  ![](https://latex.codecogs.com/gif.latex?a_%7Bk&plus;1%7Dn%5E%7Bk&plus;1%7D%20&plus;%20a_%7Bk%7Dn%5E%7Bk%7D&plus;...&plus;a_%7B1%7Dn&plus;a_%7B0%7D%20%3D%20O%28n%5E%7Bk&plus;1%7D%29)
+
+  ![](https://latex.codecogs.com/gif.latex?a_%7Bk&plus;1%7Dn%5E%7Bk&plus;1%7D%20&plus;%20O%28n%29%20%3D%20O%28n%5E%7Bk&plus;1%7D%29)
+
+  Therefore,
+
+  ![](https://latex.codecogs.com/gif.latex?%5C%20a_%7Bk%7Dn%5E%7Bk%7D%20&plus;%20a_%7Bk-1%7Dn%5E%7Bk-1%7D&plus;...&plus;a_%7B1%7Dn&plus;a_%7B0%7D%20%3D%20O%28n%5E%7Bk%7D%29)
+
+  ---
+
+- > Show that for any real constants a and b, b > 0
+  >
+  > `(n + a)^b = \theta(n^b)`
+
+  *Base case*: when `a = 0` and `b = 1`,
+
+  `(n)^1 = \theta(n)`
+
+  Using the *limit method*,
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Cfrac%7Bn%7D%7Bn%7D%20%3D%201)
+
+  Therefore `n^(b) = \theta(n^b)` :black_medium_square:
+
+  ---
+
+- > List the functions below from the lowest to the highest order
+
+  
+
+
