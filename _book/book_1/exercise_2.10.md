@@ -518,6 +518,48 @@
 
 - > List the functions below from the lowest to the highest order
 
+  ```
+  n! >> 2^n, e^n, 2^(n-1) >> n - n^3 + 7n^5 >> n^3 >> n^2, n^2 + lg n >> n^(1+e) >> \sqrt(n) >> n lg n >> (log n)^2 >> ln n, log n >> log log n    
+  ```
   
+- > List the functions below from the lowest to highest order
 
+  ```
+  n! >> 2^n, (3/2)^n >> n - n^3 + 7n^5 >> n^3 >> n^2 , n^2 log n >> n log n >> n >> n/log n >> \sqrt(n) >> log n + n^(0.3333) >> (log n)^2 >> log n/ ln n >> log log n >> 6 >> (1/3)^n
+  ```
 
+- > Find two functions `f(n)` and `g(n)` that satisfy the following relationship. If no such `f` and `g` *exist*, write **None**.
+
+  >`f(n)=o(g(n))` and `f(n) != \theta(g(n))`
+
+  **NONE**
+
+  >`f(n)= \theta(g(n))` and `f(n) =o(g(n))`
+
+  **NONE**
+
+  > `f(n) = \theta(g(n))` and `f(n) != O(g(n))`
+
+  **NONE**
+
+  > `f(n) = \Omega(g(n))` and `f(n) != O(g(n))`
+
+  `f(n) = n` and `g(n) = log n `
+  
+  using the *limit method*,
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%7D%7B%5Clog%20n%7D)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%7D%7B%5Clog%20n%7D%20%3D%20%5Cinfty)
+  
+  If ![](https://latex.codecogs.com/png.latex?%5Ctiny%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D),
+  
+  - equal to zero then `f(n) = O(g(n))`
+  - equal to infinity then `f(n)= \Omega(g(n))`
+  - c > 0 then `f(n)= \theta(g(n))`
+  
+  ---
+  
+- > True or False?
+
+  
