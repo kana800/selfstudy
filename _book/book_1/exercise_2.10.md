@@ -562,4 +562,50 @@
   
 - > True or False?
 
+  > ![](https://latex.codecogs.com/png.latex?2n%5E%7B2%7D%20&plus;%201%20%3D%20O%28n%5E%7B2%7D%29)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B2n%5E%7B2%7D%20&plus;%201%7D%7Bn%5E%7B2%7D%7D%20%3D%202)
+  
+  Therefore,
+  
+  `f(n) = \theta(g(n))` which means that `f(n) = O(g(n))`.
+  
+  > ![](https://latex.codecogs.com/png.latex?%5Csqrt%20n%20%3D%20O%28%5Clog%20n%29)
+  
+  *false* because `log n`  is in a different efficiency class (higher)
+  
+  > ![](https://latex.codecogs.com/png.latex?%5Clog%20n%20%3D%20O%28%5Csqrt%20n%29)
+  
+  *True*
+  
+  > ![](https://latex.codecogs.com/png.latex?n%5E%7B2%7D%281%20&plus;%20%5Csqrt%20n%29%20%3D%20O%28n%5E%7B2%7D%20%5Clog%20n%29)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%5E%7B2%7D%281%20&plus;%20%5Csqrt%20n%29%7D%7Bn%5E%7B2%7D%20%5Clog%20n%7D)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B1%20&plus;%20%5Csqrt%20n%7D%7B%5Clog%20n%7D%20%3D%20%5Cinfty)
+  
+  *false*
+  
+  > ![](https://latex.codecogs.com/png.latex?3n%5E%7B2%7D%20&plus;%20%5Csqrt%20n%20%3D%20O%28n%5E%7B2%7D%29)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B3n%5E%7B2%7D%20&plus;%20%5Csqrt%20n%7D%7Bn%5E%7B2%7D%7D)
+  
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%203%20&plus;%20n%5E%7B-%5Cfrac%7B3%7D%7B2%7D%7D%20%3D%204)
+  
+  Therefore,
+  
+  `f(n) = \theta(g(n))` which means that `f(n) = O(g(n))`.
+  
+  > ![](https://latex.codecogs.com/png.latex?%5Csqrt%20n%20%5Clog%20n%20%3D%20O%28n%29)
+  
+  *false* because `\sqrt n >> n`
+  
+  >  ![](https://latex.codecogs.com/png.latex?%5Clog%20n%20%3D%20O%28n%5E%7B-%5Cfrac%7B1%7D%7B2%7D%7D%29)
+  
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%3D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Clog%20n%7D%7Bn%5E%7B-%5Cfrac%7B1%7D%7B2%7D%7D%7D%20%3D%20%5Cinfty)
+  
+  *false*
+  
+  ---
+  
   
