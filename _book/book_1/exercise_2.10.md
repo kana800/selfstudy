@@ -688,6 +688,8 @@
 
   ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Cfrac%7B2%7D%7Bn%5E%7B2%7D&plus;n%7D)
 
+  Therefore, `f(n) = \theta(log(n))`
+
   > ![](https://latex.codecogs.com/png.latex?f%28n%29%20%3D%20%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Clog%20i)
 
   ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Clog%20i%20%3D%20%5Clog%20n%21)
@@ -744,12 +746,91 @@
   
   ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Clog%7B2%5E%7Bi&plus;1%7D%20-%201%7D%7D%7Bn%7D)
   
-  Using *L'Hopital's Rule* (taking the derivatives),
+  Using *L'Hopital's Rule* (taking the derivatives)
   
+  The order: 
   
+  ```
+  2^n >> n^3 >> n^2 >> n
+  ```
   
+  ---
   
+- > Place the following functions into increasing asymptotic order 
+
+  - `f1(n) = \sum_{n}^{i} \sqrt i ` and `g(n)= log n`
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Csqrt%20i)
+
+  `f1(n) = O(log n )`
+
+  - `f2(n) = \sqrt n log n` and `g(n) = n`
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%3D%20%5Csqrt%20n%20%5Clog%20n)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Csqrt%20n%20%5Clog%20n%7D%7Bn%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Clog%20n%7D%7B%5Csqrt%20n%7D%20%3D%200)
+
+  `f2(n) = O(n)`
+
+  - `f3(n \sqrt \log n` and `g(n) = n^2`
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%3D%20n%20%5Csqrt%7B%5Clog%20n%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%20n%20%5Csqrt%7B%5Clog%20n%7D%7D%7Bn%5E2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7B%5Csqrt%7B%5Clog%20n%7D%7D%7Bn%7D%20%3D%20%5Cfrac%7B%5Csqrt%7B%5Clog%20n%20%7D%7D%7Bn%7D%20%3D%200)
+
+  `f3(n) = O(n^2)`
+
+  - `f4(n) = 12n^(1.5) + 4n` and `g(n) = n^2`
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%3D%2012n%5E%7B%5Cfrac%7B3%7D%7B2%7D%7D%20&plus;%204n)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B12n%5E%7B%5Cfrac%7B3%7D%7B2%7D%7D%20&plus;%204n%7D%7Bn%5E2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%5Cfrac%7B12n%5E%7B%5Cfrac%7B3%7D%7B2%7D%7D%20&plus;%204n%7D%7Bn%5E2%7D%3D%20%5Cfrac%7Bn%28%5Csqrt%7Bn%7D%20&plus;%204%29%7D%7Bn%5E%7B2%7D%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Csqrt%7Bn%7D%20&plus;%204%7D%7Bn%7D%20%3D%200)
+
+  `f4(n) = O(n^2)`
+
+  The order:
+
+  ```
+  f4(n) >> f3(n) >> f2(n) >> f1(n)
+  ```
+
+  ---
+
+- > For each of the following expression `f(n)` , find a simple `g(n)` such that `f(n) = \theta(g(n))`.
+
+  - :triangular_ruler:
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%3D%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D3i%5E%7B4%7D&plus;2i%5E%7B3%7D%20-%2019i%20&plus;%2020)
+
+  ![](https://latex.codecogs.com/png.latex?%5Cinline%20f%28n%29%20%5Capprox%203i%5E%7B4%7D) when ![](https://latex.codecogs.com/png.latex?%5Cinline%20n%20%5Cto%20%5Cinfty), `f(n) = O(n^5)`
+
+  - :triangular_ruler:
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%3D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%3D%203%5E%7B4i%7D%20&plus;%202%5E%7B3i%7D%20-%20i%5E%7B19%7D%20&plus;%2020)
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%20%5Capprox%203%5E%7B4i%7D%20&plus;%202%5E%7B3i%7D)
+
+  `f(n) = 3^{2n}`
+
+  - :triangular_ruler:
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%20%3D%20%5Csum_%7Bi%20%3D1%7D%5E%7Bn%7D%205%5E%7Bi%7D%20&plus;%203%5E%7B2i%7D)
+
+  ![](https://latex.codecogs.com/png.latex?f%28n%29%20%5Capprox%203%5E%7B2i%7D)
+
+  `3^2i` can be written as `3^2 * 3*i`,
+
+  `f(n) = 9^{n}`
+
+  ---
+
   
-  
-  
-  
+
