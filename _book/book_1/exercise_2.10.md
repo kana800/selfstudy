@@ -832,5 +832,157 @@
 
   ---
 
-  
+- >  which of the following are **True**
 
+  > ![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Csum_%7Bi%3D0%7D%5E%7Bn%7D3%5Ei%20%3D%20%5Ctheta%283%5En-1%29)
+
+  The above function is a geometric series ![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Csum_%7Bi%3D0%7D%5E%7Bn-1%7Da%5Ei%20%3D%20%5Cfrac%7B1-a%5En%7D%7B1-a%7D),
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%3D0%7D%5E%7Bn%7D%20%3D%203%5E%7Bi%7D%20%3D%20%5Cfrac%7B3%7D%7B2%7D%283%5En-1%29)
+
+  Using *limit* method,
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Cfrac%7B3%7D%7B2%7D%283%5En-1%29%7D%7B3%5E%7Bn-1%7D%7D)
+
+   ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B3%5E%7B2-n%7D%7D%7B2%7D%283%5En-1%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%203%5E%7B2-n%7D%283%5En-1%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%203%5E%7B2-n%7D%283%5En-1%29%20%3D%20%5Cfrac%7B3%5E2%7D%7B2%7D)
+
+  Since `lim f(n)/g(n) > 0`,
+
+  The above relationship is *True*.
+
+  > ![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Csum_%7Bi%3D0%7D%5E%7Bn%7D3%5Ei%20%3D%20%5Ctheta%283%5En%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B3%7D%7B2%7D%283%5En%20-1%29%7D%7B3%5En%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2%7D%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%203%5E%7B1-n%7D%283%5En%20-1%29%20%3D%20%5Cfrac%7B1%7D%7B2%7D%283%29)
+
+  Since `lim f(n)/g(n) > 0`,
+
+  The above relationship is *True*.
+
+  > ![](https://latex.codecogs.com/png.latex?%5Cinline%20%5Csum_%7Bi%3D0%7D%5E%7Bn%7D3%5Ei%20%3D%20%5Ctheta%283%5E%7Bn&plus;1%7D%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B3%7D%7B2%7D%283%5En%20-1%29%7D%7B3%5E%7Bn&plus;1%7D%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B2%7D%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%203%5E%7B-n%7D%283%5En%20-1%29%20%3D%20%5Cfrac%7B1%7D%7B2%7D)
+
+  Since `lim f(n)/g(n) > 0`,
+
+  The above relationship is *True*.
+
+  ---
+  
+- > For each of the following functions *f* find a simple function *g* such that `f(n)=\theta(g(n))`
+
+  *reminder*: `f(n) <= c1 g(n) and f(n) >= c2.g(n) and n >= n0`
+
+  >```
+  >f1(n)= (1000)2^n + 4^n
+  >f2(n) = n + n log n + \sqrt n 
+  >f3(n) = log(n^20)+(log n)^10
+  >f4(n) = (0.99)^n + n^100
+  >```
+
+  - `f1(n)` `g(n) = 2004^n`
+
+  ```
+  2000^n + 4^n <= 2*2004^n
+  2000^n + 4^n >= 1*2004^n
+  ```
+
+  Therefore `f(n) = \theta(2004^n)`
+
+  - `f2(n)` `g(n)=n log n`
+
+  ```
+  n + n log n + \sqrt n >= 2 * n log n
+  n + n log n + \sqrt n <= 1 * n log n
+  ```
+
+  Therefore `f(n) = \theta(n log n)`
+
+  - `f3(n)` `g(n) = log(n^20)^10`
+
+  ```
+  alternate way: (log n)^10 + 20 log n
+  log(n^20)+(log n)^10 >= 2 * (log n^20)^10
+  log(n^20)+(log n)^10 >= 1 * (log n^20)^10
+  ```
+
+  Therefore `f(n) = \theta( log(n^20)^10 )`
+
+  - `f4(n)` `g(n) = n ^ 100`
+
+  ```
+  (0.99)^n + n^100 >= 2 * n ^ 100
+  (0.99)^n + n^100 <= 1 * n ^ 100
+  ```
+
+  Therefore `f(n) = \theta(n^100)`
+
+  ---
+  
+- > For each pair of expression `(A,B)` below, indicate whether `A` is `O,o,\Omega,\omega or \theta of B`. Note that zero, one or more of these relations may hold for a given pair; list all the correct ones.
+
+  | A             | B                    |
+  | ------------- | -------------------- |
+  | `n^100`       | `2^n`                |
+  | `(log n)^12`  | `\sqrt n`            |
+  | `\sqrt n`     | `n ^(cos \pi n / 8)` |
+  | `10 ^n`       | `100^n`              |
+  | `n ^ (log n)` | `(log n)^n`          |
+  | `log (n!)`    | `n log n`            |
+
+  *reminder* : [check_link](https://en.wikipedia.org/wiki/Big_O_notation)
+
+  - `n^100` and `2^n`
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7Bn%5E%7B100%7D%7D%7B2%5En%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20n%5E%7B100%7D2%5E%7B-n%7D%20%3D%200)
+
+  `A = O(B)` and `A= o(B)`
+
+  - `(log n)^12` and `\sqrt n`
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%28%5Clog%20n%29%5E%7B12%7D%7D%7B%5Csqrt%20n%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%28%5Clog%20n%29%5E%7B12%7D%7D%7B%5Csqrt%20n%7D%20%3D%200)
+
+  `A = O(B)` and `A = o(B)`
+
+  - `\sqrt n` and `n ^(cos \pi n / 8)`
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Csqrt%20n%7D%7Bn%5E%7B%5Ccos%20%5Cpi%20n%20/%208%7D%7D)
+
+  `A = \omega(B)` and `A = \Omega(B)`
+
+  - `10 ^ n` and `100^n`
+
+  `A = O(B)` and `A = o(B)`
+
+  - `n ^ log n` and `log n ^ n`
+
+  `A = O(B)` and `A=o(B)`
+
+  - `log (n !)` and `n log n`
+
+  ![](https://latex.codecogs.com/png.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7Bf%28n%29%7D%7Bg%28n%29%7D%20%3D%20%5Cfrac%7B%5Clog%20n%21%7D%7Bn%20%5Clog%20n%7D)
+
+  ![](https://latex.codecogs.com/gif.latex?%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cfrac%7B%5Clog%20n%21%7D%7Bn%20%5Clog%20n%7D%20%3D%201)
+
+  `A = \Omega(B)`, `A= O(B)` and `A=\theta(B)`
+
+---
+
+##### Summations
+
+- > Prove that : 
+  >
+  > ![](https://latex.codecogs.com/png.latex?%5Cinline%201%5E2%20-%202%5E2%20&plus;%203%5E2%20-%204%5E2%20&plus;%20...%20&plus;%20%28-1%29%5E%7Bk-1%7Dk%5E2%20%3D%20%28-1%29%5E%7Bk-1%7Dk%28k&plus;1%29/2)
+
+  
