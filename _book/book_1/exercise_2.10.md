@@ -985,4 +985,84 @@
   >
   > ![](https://latex.codecogs.com/png.latex?%5Cinline%201%5E2%20-%202%5E2%20&plus;%203%5E2%20-%204%5E2%20&plus;%20...%20&plus;%20%28-1%29%5E%7Bk-1%7Dk%5E2%20%3D%20%28-1%29%5E%7Bk-1%7Dk%28k&plus;1%29/2)
 
-  
+  Left Hand Side (simplifying),
+
+  ![](https://latex.codecogs.com/png.latex?1%5E%7B2%7D%20-%202%5E%7B2%7D%20&plus;%203%5E%7B2%7D%20-%204%5E%7B2%7D%20&plus;%20%5Cdots%20&plus;%20%28-1%29%5E%7Bk-1%7Dk%5E%7B2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bn%20%3D%201%7D%5E%7Bk%7D%20%28-1%29%5E%7Bn-1%7Dn%5E%7B2%7D)
+
+  Right Hand Side (simplifying),
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%28-1%29%5E%7Bk-1%7Dk%28k&plus;1%29)
+
+  Base case when `k = 1`,
+
+  Left Hand Side,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D%201%7D%5E%7B1%7D%20%28-1%29%5E%7B1-1%7D%5Ccdot1%5E%7B2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D%201%7D%5E%7B1%7D%20%28-1%29%5E%7B1-1%7D%5Ccdot1%5E%7B2%7D%20%3D%201)
+
+  Right Hand Side,
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%5Ccdot%28-1%29%5E%7B0%7D%5Ccdot2%20%3D%201)
+
+  Induction step: Assuming True for `n = k` , `k = k + 1`,
+
+  Left Hand Side,
+
+  ![](https://latex.codecogs.com/png.latex?1%5E%7B2%7D%20-%202%5E%7B2%7D%20&plus;%203%5E%7B2%7D%20-%204%5E%7B2%7D%20&plus;%20%5Cdots%20&plus;%20%28-1%29%5E%7Bk-1%7Dk%5E%7B2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?1%5E%7B2%7D%20-%202%5E%7B2%7D%20&plus;%203%5E%7B2%7D%20-%204%5E%7B2%7D%20&plus;%20%5Cdots%20&plus;%20%28-1%29%5E%7Bk&plus;1-1%7D%28k&plus;1%29%5E%7B2%7D)
+
+  ![](https://latex.codecogs.com/png.latex?1%5E%7B2%7D%20-%202%5E%7B2%7D%20&plus;%203%5E%7B2%7D%20-%204%5E%7B2%7D%20&plus;%20%5Cdots%20&plus;%20%28-1%29%5E%7Bk%7D%28k%5E%7B2%7D&plus;2k%20&plus;%201%29)
+
+  Right Hand Side,
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%28-1%29%5E%7Bk-1%7Dk%28k&plus;1%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%28-1%29%5E%7Bk%7D%28k&plus;1%29%28%28k&plus;1%29%20&plus;%201%29)
+
+  ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D%5Ccdot%20-1%20%5Ccdot%28k&plus;1%29%28k&plus;2%29)
+
+  Therefore,
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bn%20%3D%200%7D%5E%7Bk%7D%28-1%29%5E%7Bn%7D%28n&plus;1%29%5E%7B2%7D%3D%20%5Cfrac%7B1%7D%7B2%7D%28-1%29%5E%7Bk%7D%28k&plus;1%29%28k&plus;2%29) :black_large_square:
+
+- > Find an expression for the sum of the `ith` row of the following triangle
+
+  ```
+  					1					= 1
+  				1	1	1				= 3
+  			1	2	3	2	1			= 9
+  		1	3	6	7	6	3	1		= 27
+  	1	4	10	16	19	16	10	4	1	= 81
+  ```
+
+  Expression : `T(n) = 3^{n - 1}`
+
+  Proof : `T(1) = 3^{1-1} = 1`
+
+  `T(2) = 3^{2-1} = 3`
+
+- > Assume that Christmas has `n` days. Exactly how many presents did my "true love" send me?
+
+  ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bk%20%3D%201%7D%5E%7Bn%7D%20k) number of presents
+
+- > Consider the following code fragment
+
+  ```pseudocode
+  for i = 1 to n do
+  	for j = i to 2*i do
+  		output "foobar"
+  ```
+
+  - > Express `T(n)` as summation `T(n) denote number of times foobar is printed`
+
+    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20%5Csum_%7Bi%20%3D%20i%7D%5E%7B2*i%7D1)
+
+    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%202i%20-%20i%20&plus;%201)
+
+    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20i%20&plus;%201%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%7D%7B2%7D%20&plus;%20n)
+
+    
