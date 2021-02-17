@@ -1,4 +1,7 @@
-:warning:This contains exercise & notes of the books that I have read:warning:
-
 ### Navigation
+---
+#### Computer Science :computer:
 - [The Algorithm Design Manual](book_1)
+---
+#### Maths :heavy_plus_sign:
+- [Discrete Mathematics with Applications by Suanna S. Epp](book_2)

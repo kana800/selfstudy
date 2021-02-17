@@ -1065,4 +1065,101 @@
 
     ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn%7D%20i%20&plus;%201%20%3D%20%5Cfrac%7Bn%28n&plus;1%29%7D%7B2%7D%20&plus;%20n)
 
+- > Consider the following code fragment
+
+  ```pseudocode
+  for i = 1 to n/2 do
+  	for j = i  to n -i do
+  		for k = 1 to j do
+  			output "foobar"
+  ```
+
+  - > Express `T(n)` as three nested summations
+
+    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn/2%7D%5Csum_%7Bj%20%3D%20i%7D%5E%7Bn%20-%20i%7D%5Csum_%7Bk%20%3D%201%7D%5E%7Bj%7D1)
+
+    ![](https://latex.codecogs.com/png.latex?%5Csum_%7Bi%20%3D%201%7D%5E%7Bn/2%7D%5Csum_%7Bj%20%3D%20i%7D%5E%7Bn%20-%20i%7Dj)
+
     
+
+- > what is the time complexity of multiplying two *n* digits number in base *b* using repeated addition method, as  a function of *n* and *b*.
+
+  ```
+  multiply(a,x):
+  	for i = 1 to x:
+  		a = a + a 
+  ```
+
+  `O(n) = x*n` (Assuming `b = 10`)
+
+- > Analyze the time complexity of multiplying two n-digit numbers with this method as a function of n (assume constant base size). Assume that single-digit by single-digit addition or multiplication takes O(1) time.
+
+  `O(n) = a*n`
+
+---
+
+##### Logarithms
+
+- > Prove the following identities on logarithms
+
+  - > ![](https://latex.codecogs.com/png.latex?%5Clog_a%28xy%29%20%3D%20%5Clog_a%20x%20&plus;%20%5Clog_a%20y)
+
+    ![](https://latex.codecogs.com/png.latex?xy%20%3D%20a%5E%7Blog_%7Ba%7Dx%20&plus;%20log_%7Ba%7Dy%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clog_%7Ba%7Dx%20%3D%20i%20%3B%20%5Clog_%7Ba%7Dy%20%3D%20j%20%3B%20%5Clog_%7Bxy%7D%20%3D%20k)
+    
+    ![](https://latex.codecogs.com/png.latex?a%5E%7Bi%7D%20&plus;%20a%5E%7Bj%7D%20%3D%20a%5E%7Bk%7D)
+    
+    Therefore,
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clog_a%28xy%29%20%3D%20%5Clog_a%20x%20&plus;%20%5Clog_a%20y) :black_large_square:
+    
+  - > ![](https://latex.codecogs.com/png.latex?%5Clog_%7Ba%7D%20x%5E%7By%7D%20%3D%20y%20%5Clog_%7Ba%7D%20x)
+
+    ![](https://latex.codecogs.com/png.latex?x%5E%7By%7D%20%3D%20a%5E%7By%20%5Clog_%7Ba%7D%20x%7D)
+
+    ![](https://latex.codecogs.com/png.latex?%5Clog_%7Ba%7D%20a%5E%7By%20%5Clog_%7Ba%7D%20x%7D%20%3D%20y%20%5Clog_%7Ba%7D%20x):black_large_square:
+
+  - > ![](https://latex.codecogs.com/png.latex?%5Clog_a%20x%20%3D%20%5Cfrac%7B%5Clog_b%20x%7D%7B%5Clog_b%20a%7D)
+
+    ![](https://latex.codecogs.com/png.latex?x%20%3D%20a%5E%7B%5Cfrac%7B%5Clog_b%20x%7D%7B%5Clog_b%20a%7D%7D)
+  
+    ![](https://latex.codecogs.com/png.latex?%5Clog_a%20a%5E%7B%5Cfrac%7B%5Clog_b%20x%7D%7B%5Clog_b%20a%7D%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Clog_b%20x%7D%7B%5Clog_b%20a%7D) :black_large_square:
+    
+  - > ![](https://latex.codecogs.com/png.latex?x%5E%7B%5Clog_%7Bb%7D%20y%7D%20%3D%20y%5E%7B%5Clog_%7Bb%7D%20x%7D)
+    
+    Renaming `a ` as the index of `x` and `c` as index of `y`,  ![](https://latex.codecogs.com/png.latex?%5Cinline%20x%5E%7Ba%7D%20%3D%20y%5E%7Bc%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clog_%7Bb%7D%20x%5E%7Ba%7D%20%3D%20%5Clog_%7Bb%7D%20y%5E%7Bc%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clarge%20b%5E%7B%5Clog_%7Bb%7D%20y%5E%7Bc%7D%7D%20%3D%20b%5E%7B%5Clog_%7Bb%7Dx%5E%7Ba%7D%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clarge%20%5Clog_%7Bb%7D%20b%5E%7B%5Clog_%7Bb%7D%20y%5E%7Bc%7D%7D%20%3D%20%5Clog_%7Bb%7D%20b%5E%7B%5Clog_%7Bb%7Dx%5E%7Ba%7D%7D)
+    
+    ![](https://latex.codecogs.com/png.latex?%5Clog_%7Bb%7D%20y%5E%7Bc%7D%20%3D%20%5Clog_%7Bb%7Dx%5E%7Ba%7D) :black_large_square:
+    
+
+- > show that `log (n + 1) = log n + 1`
+  
+  *Base case* when `n = 0`
+  
+  `log (0 + 1 ) = log (1) = 1` and `log (0) + 1 = 1`
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+
+
+
+
+
+
+
