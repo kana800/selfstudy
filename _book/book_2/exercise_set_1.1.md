@@ -60,18 +60,49 @@
      Above statement is **FALSE**, if `x is negative `, `(-1)^{2} = 1` ,`-1 ` **is not greater than** `1` and if `x is positive`, `(2)^{2} = 4`, `4` **is not greater than** `1`.
      
    - > For every positive integer *n*, `n^{2} >= n`.
-   
+
      Given any positive integer, the square of the integer is greater than or equal the integer.
-   
+
       Above statement is **TRUE**.
-   
+
    - > For all real numbers *a* and *b*, `mod( a + b) <= mod(a) + mod(b)`.
-   
+
      Given two distinct real number, the modulus of the sum of two number is less than the sum of the individual modulus of both numbers.
-   
-     
-   
+
+> In each for `8-13`, fill in the blanks to rewrite the given statement.
+
+8. For every object *J*, if *J* is a square then *J* has four sides.
+
+   - All squares **have four sides**
+   - Every square **has four sides**
+   - If an object is a square then it **has four sides**
+   - If  ***J* is a square**, then ***J* has four sides**
+   - For every square *J*, ***J* has four sides** 
+
+9. For every equation *E*, if *E* is quadratic then *E* has at most two real solutions.
+
+   - All quadratic equations **have at least two real solutions**.
+   - Every quadratic equation **has at least two real solutions**.
+   - If an equation is quadratic, then it **at most has two real solutions**.
+   - If *E* is a **quadratic equation**, then *E* **must at most have two real solution**. 
+   - For every quadratic equation *E*, **there is at most two real solutions**.
+
+10. Every nonzero real number has a reciprocal.
+    - All nonzero real numbers **has a reciprocal**.
+    - For every nonzero real number *r*, there is **reciprocal** for *r*.
+    - For every nonzero real number *r*, there is a real number *s* such that **s is the reciprocal of r**:
+11. Every positive number has a positive square root.
+    - All positive numbers **has a positive square**
+    - For every positive number *e*, there is a **square** for *e*.
+    - For every positive number *e*, there is positive number *r* such that ***r* is square of *e*** .
+12. There is a real number whose product with every number leaves the number unchanged.
+    - Some **real numbers** has the property that its **product with every number leaves the number unchanged**
+    - There is a real number *r* with property that for every real number *s*, **product of *r* and *s* is equal to *r***.
+    - There is a real number *r* with property that for every real number *s*, `r = r * s`.
+13. There is a real number whose product with every real number is equals zero.
+    - Some **real numbers** has the property that its **product with every real number is equal to zero**
+    - There is real number *a* such that the product of *a*  **with every real number is equal to zero**
+    - There is a real number *a* with the property that for every real number *b*, `a * b = 0`.
 
 
 
-   
