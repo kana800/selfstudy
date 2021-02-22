@@ -119,7 +119,7 @@
    - ![](https://latex.codecogs.com/png.latex?%5Cinline%20X%20%3D%20%5C%7Bu%20%5Cin%20%5Cmathbb%7BZ%7D%20%7C%20u%20%5Cleq%204%20%5C%3B%5Ctextup%7Bor%7D%5C%3B%20u%20%5Cgeq%201%5C%7D)
    `X =`**`Z`**
 
-   8. > Let `A = {c,d,f,g}`, `B = {f,j}` and `C = {d,g}`. Answer each of the following questions. Give reason for your answers
+8. > Let `A = {c,d,f,g}`, `B = {f,j}` and `C = {d,g}`. Answer each of the following questions. Give reason for your answers
 
       - > Is ![](https://latex.codecogs.com/png.latex?%5Cinline%20B%20%5Csubseteq%20A)
 
@@ -137,7 +137,7 @@
 
       Yes, because the elements of `C` also consist in set `A`
 
-   9. >  Is ![](https://latex.codecogs.com/png.latex?%5Cinline%203%20%5Cin%20%5C%7B1%2C2%2C3%5C%7D)
+9. >  Is ![](https://latex.codecogs.com/png.latex?%5Cinline%203%20%5Cin%20%5C%7B1%2C2%2C3%5C%7D)
 
       Yes
 
@@ -177,7 +177,7 @@
       
         Yes
       
-   10. - >  Is  ![](https://latex.codecogs.com/png.latex?%5Cinline%20%28%28-2%29%5E%7B2%7D%2C-2%5E%7B2%7D%29%20%3D%20%28-2%5E%7B2%7D%2C%20%28-2%29%5E%7B2%7D%29)
+10. - >  Is  ![](https://latex.codecogs.com/png.latex?%5Cinline%20%28%28-2%29%5E%7B2%7D%2C-2%5E%7B2%7D%29%20%3D%20%28-2%5E%7B2%7D%2C%20%28-2%29%5E%7B2%7D%29)
 
          No, because `(-2)^2` is equal to `4` and `-2^2` is `-4`
 
@@ -193,7 +193,7 @@
 
          Yes
 
-   11. > Let `A = {w,x,y,z}` and `B = {a,b}`.  Use the set-roster notation to write each of the following sets, and indicate the number of elements that in each set.
+11. > Let `A = {w,x,y,z}` and `B = {a,b}`.  Use the set-roster notation to write each of the following sets, and indicate the number of elements that in each set.
 
        - > `A x B` : 8 elements
 
@@ -208,7 +208,7 @@
 
        - > `B x B`: 4 elements
 
-   12. > Let `S = {2,4,6}` and `T = {1,3,5}`. Use the set-roster notation to write each of the following sets, and indicate the number of elements that are in each set.
+ 12. > Let `S = {2,4,6}` and `T = {1,3,5}`. Use the set-roster notation to write each of the following sets, and indicate the number of elements that are in each set.
 
        - > `S x T` : 9 elements
 
@@ -226,7 +226,7 @@
          T x T = {(1,1),(1,3),(1,5),(3,1),(3,3),(3,5),(5,1),(5,3),(5,5)}
          ```
 
-   13.  Let `A = {1,2,3}` , `B = {u}` and `C = {m,n}`. Find each of the following sets.
+13.  Let `A = {1,2,3}` , `B = {u}` and `C = {m,n}`. Find each of the following sets.
 
        - > `A x (B x C)`
 
@@ -248,7 +248,7 @@
          A x B x C = {(1,u,m),(1,u,n),...}
          ```
 
-   14. Let `R = {a}`, `S = {x,y}` and `T = {p,q,r}`. Find each of the following sets.
+14. Let `R = {a}`, `S = {x,y}` and `T = {p,q,r}`. Find each of the following sets.
 
        - > `R x (S x T)`
 
@@ -257,13 +257,13 @@
          R x (S x T) = { (a, (x,p)), (a,(x,q)) , (a,(x,r)) , (a,(y,p)), (a,(y,q)) , (a,(y,r) )}
          ```
 
-   15.  Let `S = {0, 1}`. List all the strings of length 4 over S that contain three or more 0's
+15.  Let `S = {0, 1}`. List all the strings of length 4 over S that contain three or more 0's
 
    ```
    0000 0001 0010 0100 1000
    ```
 
-   16. Let `T ={x,y}`. List all the strings of length 5 over T that have exactly one y
+16. Let `T ={x,y}`. List all the strings of length 5 over T that have exactly one y
 
    ```
    xxxxy xxxyx xxyxx xyxxx yxxxx
