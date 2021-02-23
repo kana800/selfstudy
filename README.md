@@ -2,7 +2,7 @@ This repository consists of shortnotes,summarys and practice questions that I ga
 
 
 ### Table Of Content
-- [Notes and Exercise on Books](_books)
+- [Notes and Exercise on Books](_book)
 - [Notes](_notes)
 - [Courses](_courses)
 - [Teaching](_teaching)
