@@ -477,7 +477,7 @@ Right Hand Side,
 
 ##### Interview Problems :mortar_board:
 
-- [function to perform integer division](division.c)
+- [function to perform integer division](codes/division.c)
 
 - >  25 horses , At most 5 horses can race together,  Need to determine the 1st,2nd & 3rd fastest horses. Find the minimum number of races in which this can be done
 

@@ -1146,20 +1146,5 @@
   *Base case* when `n = 0`
   
   `log (0 + 1 ) = log (1) = 1` and `log (0) + 1 = 1`
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
 
-
-
-
-
-
-
+- > Prove that the binary representation of `n >= 1` has `log 2 + 1` bits
