@@ -1,1 +1,1 @@
-- [coursera Machine Learning](course_1)
+- [coursera Machine Learning](course_1) | [Progress](https://github.com/kana800/selfstudy/issues/9#issuecomment-783939584)
